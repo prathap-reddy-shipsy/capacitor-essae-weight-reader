@@ -14,6 +14,9 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
+* [`mapSettings(...)`](#mapsettings)
+* [`getWeight(...)`](#getweight)
+* [`tareWeight(...)`](#tareweight)
 
 </docgen-index>
 
@@ -31,6 +34,47 @@ echo(options: { value: string; }) => Promise<{ value: string; }>
 | **`options`** | <code>{ value: string; }</code> |
 
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+
+--------------------
+
+
+### mapSettings(...)
+
+```typescript
+mapSettings(options: { deviceAddress: string; }) => Promise<void>
+```
+
+| Param         | Type                                    |
+| ------------- | --------------------------------------- |
+| **`options`** | <code>{ deviceAddress: string; }</code> |
+
+--------------------
+
+
+### getWeight(...)
+
+```typescript
+getWeight(options: { deviceAddress: string; deviceName: string; }) => Promise<{ weight: string; }>
+```
+
+| Param         | Type                                                        |
+| ------------- | ----------------------------------------------------------- |
+| **`options`** | <code>{ deviceAddress: string; deviceName: string; }</code> |
+
+**Returns:** <code>Promise&lt;{ weight: string; }&gt;</code>
+
+--------------------
+
+
+### tareWeight(...)
+
+```typescript
+tareWeight(options: { deviceAddress: string; }) => Promise<void>
+```
+
+| Param         | Type                                    |
+| ------------- | --------------------------------------- |
+| **`options`** | <code>{ deviceAddress: string; }</code> |
 
 --------------------
 

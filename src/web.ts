@@ -7,4 +7,16 @@ export class detectWeightWeb extends WebPlugin implements detectWeightPlugin {
     console.log('ECHO', options);
     return options;
   }
+  async mapSettings(options: { deviceAddress: string }): Promise<void> {
+    console.log('mapSettings', options);
+    return
+  }
+  async getWeight(options: { deviceAddress: string, deviceName: string }): Promise<{ weight: string }>{
+    console.log('getWeight', options);
+    return { weight: '0' }
+  }
+  async tareWeight(options: { deviceAddress: string }): Promise<void>{
+    console.log('tareWeight', options);
+    return
+  }
 }
